@@ -13,7 +13,7 @@ test("radio button", async({page}) => {
     await expect(await page.locator('//input[@value="Upi"]').isChecked()).toBeFalsy()
 })
 
-test.only("checkbox", async({page}) => {
+test("checkbox", async({page}) => {
     await page.goto("https://demoapps.qspiders.com/ui/checkbox?sublist=0")
     await page.locator('input#domain_b').check()
     await page.waitForTimeout(2000)

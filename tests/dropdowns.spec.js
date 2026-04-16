@@ -77,7 +77,7 @@ test("autosuggestions dropdown using for loop", async({page}) => {
     }
 })
 
-test.only("autosuggestions dropdown using down arrow", async({page}) => {
+test("autosuggestions dropdown using down arrow", async({page}) => {
     await page.goto("https://www.amazon.in/")
     await page.locator('input#twotabsearchtextbox').fill("shoes")
     // await page.waitForTimeout(2000)
