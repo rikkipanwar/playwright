@@ -85,5 +85,4 @@ test.only("autosuggestions dropdown using down arrow", async({page}) => {
     await page.keyboard.press("ArrowDown")
     await page.keyboard.press("Enter")
     await page.waitForTimeout(2000)
-    console.log("hello")
 })
